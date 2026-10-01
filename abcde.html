@@ -3,97 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Web Page</title>
-    <style>
-        /* Base styles for a clean, modern look */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #2c3e50;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background: #34495e;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-        button {
-            background-color: #3498db;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #2980b9;
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #2c3e50;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>My Modern Web Page</title>
+    <!-- This links your HTML to your CSS sheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Welcome to My Static Website</h1>
+        <h1>Welcome to My Website</h1>
+        <p>A clean, modern starting template.</p>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <main class="container">
+        <section class="card">
+            <h2>About This Template</h2>
+            <p>This layout uses HTML5 structure and basic CSS variables. It is fully responsive, meaning it adapts seamlessly to both desktop and mobile screens.</p>
+        </section>
 
-    <div class="container">
-        <h2>About This Page</h2>
-        <p>This is a lightweight, responsive static web page built using plain HTML, CSS, and JavaScript. Because it is static, it serves pre-built files directly to your browser without any server-side processing, making it incredibly fast and secure.</p>
-        
-        <button id="alertBtn">Click Me!</button>
-    </div>
+        <section class="card">
+            <h2>Next Steps</h2>
+            <p>Modify the text in the <code>index.html</code> file and update the colors inside the <code>style.css</code> file to make it your own!</p>
+            <a href="#" class="btn">Learn More</a>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 My Static Site</p>
+        <p>&copy; 2026 My Website Template</p>
     </footer>
-
-    <script>
-        // Simple client-side interactivity
-        document.getElementById('alertBtn').addEventListener('click', function() {
-            alert('Hello! This is a simple interactive element running entirely in your browser.');
-        });
-    </script>
 
 </body>
 </html>
